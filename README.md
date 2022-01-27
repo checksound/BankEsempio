@@ -11,14 +11,14 @@ Nel package [unsynch](./src/main/java/unsynch) c'è la versione non sincronizzat
 Nel package [synch](./src/main/java/synch) c'è la versione che utilizza 
 `java.util.concurrent.locks.Lock` e `java.util.concurrent.locks.Condition`.
 
-Nel package [synch2](./src/main/java/synch2) c'è la versione che utilizza `synchronized`, `wait` e `notifyAll`.
+Nel package [synch2](./src/main/java/synch2) c'è la versione che utilizza `synchronized`, `wait()` e `notifyAll()`.
 
 ## Deadlock
 
 Lock e condizioni non possono risolvere tutti i problemi che si possono 
 verificare in applicazioni multithread.
 
-Consideriamo la segente condizione:
+Consideriamo la seguente condizione:
 
 1. Account 1: $200
 2. Account 2: $300
